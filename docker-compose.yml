@@ -1,13 +1,13 @@
 version: "3"
 services: 
- auto-sqlback:
-  restart: always
-  container_name: auto-sqlbak
-  image: tonghs/gobackup:latest
+  gobackup:
+    restart: always
+    container_name: gobackup
+    image: tonghs/gobackup:latest
 
-  environment:
-    - BAK_SCHEDULE=* * * * *
+    environment:
+      - BAK_SCHEDULE=* * * * *
 
-  volumes: 
-    - ./conf/:/etc/gobackup/
-    - ./data/backups/:/data/backups/
+    volumes: 
+      - ./conf/:/etc/gobackup/
+      - ./data/backups/:/data/backups/

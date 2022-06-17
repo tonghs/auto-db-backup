@@ -4,10 +4,11 @@
 
 
 ## build
-docker build . -t <you image name>
+docker build . -t gobackup
 
 ### 环境变量
 `BAK_SCHEDULE`
+
 备份周期，参考 crontab 格式
 
 ### 配置文件

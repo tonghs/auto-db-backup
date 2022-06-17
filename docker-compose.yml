@@ -3,7 +3,7 @@ services:
  auto-sqlback:
   restart: always
   container_name: auto-sqlbak
-  image: gobackup:latest
+  image: tonghs/gobackup:latest
 
   environment:
     - BAK_SCHEDULE=* * * * *

@@ -1,0 +1,10 @@
+models:
+  gitlab:
+    compress_with:
+      type: tgz
+    store_with:
+      type: local
+      path: /data/backups/
+    archive:
+      includes:
+        - /etc/gobackup/

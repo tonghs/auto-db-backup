@@ -7,4 +7,4 @@ models:
       path: /data/backups/
     archive:
       includes:
-        - /etc/gobackup/
+        - /etc/gobackup/*
